@@ -5,4 +5,4 @@ dog_breed = input("Enter breed: ")
 #Loading those variables into a dictionary
 dog = {'name': dog_name, 'age':dog_age,'breed':dog_breed}
 #Printing the dog
-print(f'{dog_name} is a {dog_breed} that is {dog_age} years old.')
+print(f'{dog["name"]} is a {dog["breed"]} that is {dog["age"]} years old.')
