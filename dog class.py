@@ -7,7 +7,9 @@ class Dog:
         self.breed = breed
         
     def speak(self):
-        return 'woof'
+        if self.breed == "Rotty":
+            return 'Bork'
+        return 'Woof'
 
     def __str__(self):
         return f'{self.name} is a {self.age} year old {self.breed}'
