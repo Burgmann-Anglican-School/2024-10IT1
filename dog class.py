@@ -6,12 +6,16 @@ class Dog:
         self.age = age
         self.breed = breed
         
+    def speak(self):
+        return 'woof'
+
     def __str__(self):
         return f'{self.name} is a {self.age} year old {self.breed}'
     
 #Line 14 instantiates line 2
 #dog is a Variable - Instance of an object
-dog = Dog(input('Name: '), int(input('Age: ')), input('Breed: '))
-dog2 = Dog('bob',23,'red')
-print(dog.name)
-print(dog)
+dog = Dog('Whatabout', 5, 'Rotty')
+dog2 = Dog('Obb', 23, 'red')
+ 
+dog3 = Dog('bob', 1, 'kelpie')
+dog4 = Dog('bob', 1, 'kelpie')
