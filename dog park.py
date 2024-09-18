@@ -24,6 +24,10 @@ class Lab(Dog):
 class Corgi(Dog):
     def speak(self):
         return f'{self.name} says "yap"'
+    
+class GoldenRetriever(Dog):
+    def speak(self, words='bark'):
+        return super().speak(words)
 
 dog1 = Dog('Sir Jeffington III', 3)
 dog2 = Dachsund('Sausage', 1)
