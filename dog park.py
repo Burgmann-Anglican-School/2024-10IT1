@@ -17,8 +17,8 @@ class Dachsund(Dog):
         return f'{self.name} says "oof"'
 
 class Lab(Dog):
-    
-    def speak(self, words='bark'):
+    # this is bad programming, you should just write pass
+    def speak(self, words):
         return super().speak(words)
 
 class Corgi(Dog):
